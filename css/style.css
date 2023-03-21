@@ -1,0 +1,264 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8f9fb;
+}
+
+html, body, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.h1 {
+  margin: 2rem 0 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+body {
+  background-image: linear-gradient(to left, #6ac4e2, #94ebf7);
+}
+
+.main-nav {
+  background-color: #0d6efd;
+  width: 100vw;
+  overflow: hidden;
+}
+.main-nav ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-nav ul li {
+  float: left;
+  width: 20%;
+}
+@media screen and (max-width: 600px) {
+  .main-nav ul li {
+    width: 100%;
+  }
+}
+.main-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 16px;
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+}
+.main-nav ul li a:hover {
+  background-color: #033648;
+}
+.main-nav ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main-nav ul .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-nav ul .buttons .divider {
+  margin-right: 4px;
+}
+.main-nav ul .buttons .button--primary {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fd7e14;
+  color: #6f42c1;
+  text-decoration: none;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+  color: #f8f9fb;
+}
+.main-nav ul .buttons .button--primary:hover {
+  background-color: #dc6502;
+}
+.main-nav ul .buttons .button--secondary {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0dcaf0;
+  color: #007bff;
+  text-decoration: none;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+  color: #f8f9fb;
+}
+.main-nav ul .buttons .button--secondary:hover {
+  background-color: #0aa1c0;
+}
+
+.lead-banner {
+  width: 100%;
+  position: relative;
+  color: white;
+  text-align: right;
+}
+.lead-banner .banner-content {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+}
+.lead-banner img {
+  width: 100%;
+}
+.lead-banner span {
+  font-size: 42px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+@media screen and (max-width: 3000px) and (min-width: 2000px) {
+  .lead-banner span {
+    font-size: 60px;
+  }
+}
+.lead-banner span.sub-title {
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #f8f9fb;
+}
+@media screen and (max-width: 1200px) {
+  .lead-banner {
+    max-height: 640px;
+    overflow: hidden;
+  }
+}
+
+section h1, section .section-trip h1, .section-trip section h1, section #activite h1, #activite section h1 {
+  color: #032f3e;
+  font-size: 24px;
+}
+
+#activite {
+  padding: 1rem 0;
+}
+#activite h1 {
+  color: #032f3e;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+#activite ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#activite li {
+  width: 16.6666666667%;
+  box-sizing: border-box;
+  text-align: center;
+}
+#activite li img {
+  width: 60%;
+  margin: 1rem 20%;
+}
+#activite li a {
+  color: #032f3e;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+#activite li a:hover {
+  color: #fbfaf8;
+}
+
+.paragliding {
+  width: 100%;
+  position: relative;
+  color: white;
+  text-align: right;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+.paragliding .banner-content {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+}
+.paragliding img {
+  width: 100%;
+}
+.paragliding span {
+  font-size: 42px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+@media screen and (max-width: 3000px) and (min-width: 2000px) {
+  .paragliding span {
+    font-size: 60px;
+  }
+}
+.paragliding span.sub-title {
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #f8f9fb;
+}
+@media screen and (max-width: 1200px) {
+  .paragliding {
+    max-height: 640px;
+    overflow: hidden;
+  }
+}
+.paragliding ul {
+  display: flex;
+  justify-content: end;
+  gap: 3rem;
+}
+.paragliding ul li {
+  text-transform: uppercase;
+  font-size: 2rem;
+  max-width: 500px;
+  margin: 60px 0;
+}
+.paragliding ul li a {
+  display: block;
+  color: rgb(240, 68, 68);
+}
+.paragliding ul li a:hover {
+  color: #f8f9fb;
+  text-shadow: 1px 2px 5px;
+}
+
+.section-trip {
+  float: left;
+  width: 100%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+.section-trip h1, .section-trip #activite h1, #activite .section-trip h1 {
+  color: #032f3e;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.section-trip:nth-child(1n) {
+  margin-right: 0;
+}
+.section-trip img {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
