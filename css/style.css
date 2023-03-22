@@ -244,20 +244,20 @@ section h1, section .section-trip h1, .section-trip section h1, section #activit
   text-shadow: 1px 2px 5px;
 }
 
-.section-trip {
+.section-trip li {
   float: left;
   width: 100%;
   margin-right: 5%;
   margin-bottom: 5%;
+}
+.section-trip li:nth-child(1n) {
+  margin-right: 0;
 }
 .section-trip h1, .section-trip #activite h1, #activite .section-trip h1 {
   color: #032f3e;
   font-size: 24px;
   text-transform: uppercase;
   text-align: center;
-}
-.section-trip:nth-child(1n) {
-  margin-right: 0;
 }
 .section-trip img {
   width: 100%;

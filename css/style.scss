@@ -158,6 +158,11 @@ section {
 
 
 .section-trip {
+
+    li {
+        @include grid(1, 5%);
+    }
+
     h1 {
         @extend h1;
         color: $primaryColor;
@@ -166,9 +171,8 @@ section {
         text-align: center;
     }
 
-    @include grid(1, 5%);
-
     img {
         width: 100%;
+        
     }
 }
