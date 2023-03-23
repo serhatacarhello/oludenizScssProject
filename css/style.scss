@@ -21,6 +21,9 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
 
         li {
             float: left;
@@ -49,7 +52,10 @@ body {
         .buttons {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: center;            
+            @include mQ(800px, 100px) {
+            display: none;
+        }
 
             .divider {
                 margin-right: 4px
@@ -81,7 +87,7 @@ section {
     h1 {
         @extend h1;
         color: $primaryColor;
-        font-size: $sectionHeading;
+        font-size: $sectionHeading;       
     }
 }
 
@@ -101,6 +107,10 @@ section {
         display: flex;
         align-items: center;
         justify-content: space-between;
+         @include mQ(800px, 100px) {
+           flex-wrap: wrap;
+        }
+        
     }
 
     li {
@@ -160,7 +170,10 @@ section {
 .section-trip {
 
     li {
-        @include grid(1, 5%);
+     
+        @include mQ (1400px, 768px) {                
+            @include grid(2, 5%);
+        }
     }
 
     h1 {
@@ -173,6 +186,5 @@ section {
 
     img {
         width: 100%;
-        
     }
 }
